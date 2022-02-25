@@ -11,7 +11,6 @@ class MyApp(models.Model):
     created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name='my_apps')
 
     def __str__(self):
-        -b 
         return f'MyApp {self.id} {self.name}'
 
     class Meta:
