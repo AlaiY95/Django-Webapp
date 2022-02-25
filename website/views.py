@@ -1,5 +1,14 @@
 from django.shortcuts import render
+from website.models import MyApp
 
 # Create your views here.
 def index(request):
-    return render(request, 'website/index.html')
+    all_apps = MyApp.objects.all()
+    
+    # Dictionary with key values
+    context = {
+        'my_apps': all_apps
+    }
+    return render(request, 'website/index.html', context)
+
+
