@@ -43,10 +43,10 @@
       id="mainNav"
     >
       <div class="container">
-        {% if page == '/' %}
+        {% if app_name == 'website' %}
         <a class="navbar-brand" href="#page-top">Network Design</a>
         {% else %}
-         <a class="navbar-brand" href="/">Network Design</a>
+         <a class="navbar-brand" href="{% url 'website:index' %}">Network Design</a>
         {% endif %}
         <button
           class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
@@ -63,7 +63,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
 
-            {% if page == '/' %}
+            {% if app_name == 'website' %}
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio"
                 >Portfolio</a
@@ -79,7 +79,7 @@
                class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"
                 >Contact</a
               >
-              {% elif '/supplychain' in page %}
+              {% elif app_name == 'supplychain' %}
               <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#import-form" >Import form</a>
             <li class="nav-item mx-0 mx-lg-1">

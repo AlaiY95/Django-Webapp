@@ -9,7 +9,7 @@ def index(request):
     # Dictionary with key values
     context = {
         'my_apps': all_apps,
-        'page': request.path,
+        'app_name': request.resolver_match.app_name
     }
     # Query passed as context  below
     return render(request, 'website/index.html', context)

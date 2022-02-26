@@ -16,7 +16,7 @@ class MyApp(models.Model):
 
     class Meta:
         verbose_name_plural = 'my apps'
-        ordering = ['id']\
+        ordering = ['id']
             
             
             
