@@ -3,9 +3,6 @@ from django.db import models
 # https://www.youtube.com/watch?v=Krnqm7GRwTw&list=PLqvh7Qfqxgg5IjBDfhVBAZMkHQHiQf8wP&index=19&ab_channel=SugarloafAndaCupofJoe
 # https://www.eea.europa.eu/data-and-maps/data/air-pollutant-concentrations-at-station
 
-from django.db import models
-
-
 class Pollutant(models.Model):
     """Pollution model for airpollution app"""
     name = models.CharField(max_length=10, primary_key=True)
