@@ -14,7 +14,7 @@ def index(request):
         'app_name': request.resolver_match.app_name
     }
     # Query passed as context  below
-    return render(request, 'website/index2.html', context)
+    return render(request, 'website/index.html', context)
 
 
 def samples(request):
