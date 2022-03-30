@@ -32,4 +32,4 @@
  10. python manage.py createsuperuser (enter username, email, password)
 
 ```
-# Dont't Forgot Give star and fork
+## Dont't Forget to Give star and fork
